@@ -1,1 +1,0 @@
-# barcode_scanning_app
