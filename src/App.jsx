@@ -1,31 +1,32 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Navbar from "./components/Navbar"
-import Signup from "./components/Signup"
-import Login from "./components/Login"
-import Home from "./components/Home"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Signup from "./components/Signup";
+import Login from "./components/Login";
+import Home from "./components/Home";
+import logo from './logo_take_a_stick.jpg';
+import './app.css';
 
 const App = () => {
-  const myDiv = (
-    <div>
-      <h1>Hello</h1>
-    </div>
-  );
-
-
   return (
     <BrowserRouter>
-      <div className="w-11/12 flex flex-col mx-auto">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-      {myDiv}
-    </div>
+      <div className="app-container">
+        <div className="header-container">
+          <div className="logo">
+            <img className="logo" src={logo} alt="Logo" />
+          </div>
+          <div id="navBar"><Navbar />
+          </div>
+        </div>
+        <div className="content-container">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+        </div>
+      </div>
     </BrowserRouter>
-  )
+  );
 };
 
-
-export default App
+export default App;

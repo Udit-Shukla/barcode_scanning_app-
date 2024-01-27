@@ -1,0 +1,32 @@
+html, body {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+  
+  #navBar {
+    padding: 20px;
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    /* Your logo styles */
+  }
+  
+  .content-container {
+    width: 80%;
+ }
+  
